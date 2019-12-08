@@ -30,7 +30,7 @@ function appendKitten(name){
 
 function prependKitten(name){
   var newKitten = [name]
-  return(kittens.prepend(newKitten))
+  return(newKitten.concat(kittens))
 }
 
 function removeLastKitten(){

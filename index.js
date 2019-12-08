@@ -24,12 +24,12 @@ function destructivelyRemoveFirstKitten(){
 }
 
 function appendKitten(name){
-  kittens = kittens.append(name);
+  kittens = kittens.slice(name);
   return(kittens)
 }
 
 function prependKitten(name){
- kittens = kittens.prepend(name);
+ kittens = kittens.concat(name);
  return(kittens)
 }
 
@@ -39,6 +39,6 @@ function removeLastKitten(){
 }
 
 function removeFirstKitten(){
-  kittens = kittens.slice(0,0);
+  kittens = kittens.slice(0);
   return(kittens)
 }
